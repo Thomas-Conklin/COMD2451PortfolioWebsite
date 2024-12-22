@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: 'VCR OSD Mono';
+}
+
+body {
+    background-image: url("images/stars.png");
+    background-color: black;
+    color: white;;
+}
+
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('fonts/VCROSDMono.eot'),
+    url('fonts/VCROSDMono.svg'),
+    url('fonts/VCROSDMono.ttf'),
+    url('fonts/VCROSDMono.woff'),
+    url('fonts/VCROSDMono.woff2');
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+  
+.column.side {
+    width: 33.33%;
+}
+  
+.column.middle {
+    width: 33.33%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display:block;
+    background-color: yellow;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.footer:hover {
+    background-color: black;
+    color: white;
+}
