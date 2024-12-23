@@ -23,12 +23,51 @@ body {
 }
 
 .header {
-    background-color: yellow;
+    background-image: url("../images/stars.png");
     padding: 10px;
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
     color: black;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 0px;
+    width: 33.33%;
+    text-decoration: none;
+}
+
+.topnav1 {
+    background-color: orangered;
+}
+
+.topnav2 {
+    background-color: orange;
+}
+
+.topnav3 {
+    background-color: yellow;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
 }
 
 #fcf-form {
@@ -218,7 +257,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     position: fixed;
     bottom: 0;
     display:block;
-    background-color: yellow;
+    background-color: red;
     padding: 20px;
     width: 100%;
     text-align: center;
