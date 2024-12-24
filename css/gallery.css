@@ -4,9 +4,9 @@
 }
 
 body {
-    background-image: url("images/stars.png");
+    background-image: url("../images/stars.png");
     background-color: black;
-    color: white;;
+    color: white;
 }
 
 @font-face {
